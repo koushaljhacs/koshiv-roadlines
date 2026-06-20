@@ -5,6 +5,8 @@ import { TruckServiceSection } from './sections/TruckServiceSection';
 import { ContractTransportSection } from './sections/ContractTransportSection';
 import { RoutesCoverageSection } from './sections/RoutesCoverageSection';
 import { WhyChooseUsSection } from './sections/WhyChooseUsSection';
+import { AboutSection } from './sections/AboutSection';
+import { InquirySection } from './sections/InquirySection';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <ContractTransportSection />
       <RoutesCoverageSection />
       <WhyChooseUsSection />
+      <AboutSection />
+      <InquirySection />
     </>
   );
 }
