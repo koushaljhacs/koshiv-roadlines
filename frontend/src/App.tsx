@@ -1,3 +1,5 @@
+import { Navbar } from './components/layout/Navbar';
+import { Footer } from './components/layout/Footer';
 import { HeroSection } from './sections/HeroSection';
 import { ServicesSection } from './sections/ServicesSection';
 import { BusServiceSection } from './sections/BusServiceSection';
@@ -11,15 +13,19 @@ import { InquirySection } from './sections/InquirySection';
 function App() {
   return (
     <>
-      <HeroSection />
-      <ServicesSection />
-      <BusServiceSection />
-      <TruckServiceSection />
-      <ContractTransportSection />
-      <RoutesCoverageSection />
-      <WhyChooseUsSection />
-      <AboutSection />
-      <InquirySection />
+      <Navbar />
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <BusServiceSection />
+        <TruckServiceSection />
+        <ContractTransportSection />
+        <RoutesCoverageSection />
+        <WhyChooseUsSection />
+        <AboutSection />
+        <InquirySection />
+      </main>
+      <Footer />
     </>
   );
 }
