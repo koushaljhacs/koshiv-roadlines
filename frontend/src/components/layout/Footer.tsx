@@ -52,7 +52,7 @@ export const Footer = () => {
 
         {/* Navigation links (footer) */}
         <div className="mt-8 border-t border-slate-700 pt-8">
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <div className="flex flex-wrap justify-center gap-3 gap-y-2 text-sm">
             {navItems.map((item) => (
               <a
                 key={item.label}

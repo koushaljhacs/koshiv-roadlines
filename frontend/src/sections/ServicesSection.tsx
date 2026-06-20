@@ -15,7 +15,7 @@ export const ServicesSection = () => {
           {servicesOverview.map((service) => (
             <div
               key={service.title}
-              className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+              className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
               {/* Accent top border */}
               <div className="mb-4 h-1 w-12 rounded-full bg-amber-500" />

@@ -63,7 +63,7 @@ export const HeroSection = () => {
   return (
     <section id="home" className="bg-slate-900 py-20 text-white sm:py-28">
       <Container>
-        <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-start">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-16">
           {/* Left content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
@@ -82,9 +82,9 @@ export const HeroSection = () => {
             </div>
 
             {/* Trust points */}
-            <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3 text-left sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3 text-center lg:text-left sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               {trustPoints.map((point) => (
-                <li key={point} className="flex items-center gap-2 text-sm text-slate-300">
+                <li key={point} className="flex items-center justify-center gap-2 text-sm text-slate-300 lg:justify-start">
                   <CheckIcon />
                   {point}
                 </li>
@@ -93,8 +93,8 @@ export const HeroSection = () => {
           </div>
 
           {/* Right-side visual card (pure CSS/Tailwind) */}
-          <div className="w-full max-w-xs lg:max-w-sm">
-            <div className="rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl">
+          <div className="w-full max-w-xs lg:max-w-md">
+            <div className="rounded-2xl border border-slate-700 bg-slate-800 p-8 shadow-xl">
               <div className="flex flex-col items-center gap-6">
                 <BusIcon />
                 <TruckIcon />

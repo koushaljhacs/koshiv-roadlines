@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-900 text-white">
+    <nav className="sticky top-0 z-50 bg-slate-900/95 text-white backdrop-blur-sm shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Brand */}
@@ -70,7 +70,7 @@ export const Navbar = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4 space-y-2">
+          <div className="md:hidden rounded-b-xl border-t border-slate-800 bg-slate-900/95 pb-4 shadow-lg space-y-2">
             {navItems.map((item) => (
               <a
                 key={item.label}
